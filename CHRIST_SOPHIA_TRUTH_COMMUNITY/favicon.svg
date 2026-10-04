@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141a29"/>
+      <stop offset="100%" stop-color="#0a0c12"/>
+    </linearGradient>
+    <linearGradient id="blueG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="pinkG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+    <linearGradient id="goldG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4f8cff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4f8cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)" stroke="#2a354d" stroke-width="2"/>
+  <circle cx="32" cy="32" r="24" fill="url(#glow)"/>
+
+  <!-- Dial Rings -->
+  <circle cx="32" cy="32" r="22" fill="none" stroke="#253046" stroke-width="1.5" stroke-dasharray="2 3.5"/>
+  <circle cx="32" cy="32" r="17" fill="none" stroke="#374563" stroke-width="1"/>
+
+  <!-- Diagonal Star Points -->
+  <polygon points="32,32 23,23 18,18 27,25" fill="#64748b" opacity="0.6"/>
+  <polygon points="32,32 41,23 46,18 37,25" fill="#64748b" opacity="0.6"/>
+  <polygon points="32,32 23,41 18,46 27,39" fill="#64748b" opacity="0.6"/>
+  <polygon points="32,32 41,41 46,46 37,39" fill="#64748b" opacity="0.6"/>
+
+  <!-- Major North Pointer (Blue Gradient) -->
+  <polygon points="32,7 36,32 32,28" fill="url(#blueG)"/>
+  <polygon points="32,7 28,32 32,28" fill="#93c5fd"/>
+
+  <!-- Major South Pointer (Pink Gradient) -->
+  <polygon points="32,57 36,32 32,36" fill="url(#pinkG)"/>
+  <polygon points="32,57 28,32 32,36" fill="#fbcfe8"/>
+
+  <!-- Major East / West Pointers (Gold Gradient) -->
+  <polygon points="57,32 32,36 36,32" fill="url(#goldG)"/>
+  <polygon points="57,32 32,28 36,32" fill="#fef08a"/>
+  <polygon points="7,32 32,36 28,32" fill="url(#goldG)"/>
+  <polygon points="7,32 32,28 28,32" fill="#fef08a"/>
+
+  <!-- Central Iris / Eye of Truth -->
+  <circle cx="32" cy="32" r="5.5" fill="#0c0f16" stroke="url(#goldG)" stroke-width="1.8"/>
+  <circle cx="32" cy="32" r="2.2" fill="#ffc247"/>
+</svg>
