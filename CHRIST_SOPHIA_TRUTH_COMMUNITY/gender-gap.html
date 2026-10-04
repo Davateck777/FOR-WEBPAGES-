@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>101 Men for Every 100 Women — and Why That Matters When Wars Start</title>
+<meta name="description" content="A simple, honest community page about the global male-female gap, status-starved young men, and the documented link to conflict and violence against women." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Sora:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="index.html">🧭 <span>The Hard Numbers</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gender-gap.html" class="here">The 42 Million Gap</a>
+    <a href="christa-pike.html">Christa Pike</a>
+    <a class="cta" href="#join">Join 🤝</a>
+  </nav>
+</header>
+
+<!-- ============ 1. INFO BANNER ============ -->
+<section class="banner" id="top">
+  <canvas id="fx"></canvas>
+  <div class="banner-inner">
+    <p class="kicker">🌍 Community research page · plain language · no spin</p>
+    <h1>There are about <span class="hl" id="countMen">0</span> million more men than women on Earth.</h1>
+    <p class="lede">
+      Sounds like a boring statistic. It isn't. That small gap — plus millions of young men with
+      no job, no status and no future at home — is one of the quietest predictors of unrest, war,
+      and violence against women that demographers keep writing about.
+      <br><br>
+      This page collects what news articles, UN reports and peer-reviewed papers actually say,
+      in simple words. Then it hands the mic to you. 🎙️
+    </p>
+    <div class="banner-btns">
+      <a class="btn primary" href="#join">Get the WhatsApp group link 💬</a>
+      <a class="btn ghost" href="#numbers">Just show me the data ↓</a>
+    </div>
+    <ul class="ticker">
+      <li>👶 105–106 boys born per 100 girls</li>
+      <li>🧓 Women are ~56% of people 65+</li>
+      <li>📅 UN projects near-parity around 2050</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ INFOGRAPHIC ============ -->
+<section class="wrap" id="numbers">
+  <h2 class="sec-title">📊 The numbers, honestly</h2>
+  <p class="sec-sub">Global population, rounded. Sources at the bottom of this page.</p>
+
+  <div class="stat-grid">
+    <article class="stat reveal">
+      <span class="emoji">👨</span>
+      <b class="big">4.17B</b>
+      <span class="lab">Males — 50.26%</span>
+      <div class="bar"><i style="--w:50.26%; --c:#4f8cff"></i></div>
+    </article>
+    <article class="stat reveal">
+      <span class="emoji">👩</span>
+      <b class="big">4.13B</b>
+      <span class="lab">Females — 49.74%</span>
+      <div class="bar"><i style="--w:49.74%; --c:#ff6fae"></i></div>
+    </article>
+    <article class="stat reveal">
+      <span class="emoji">⚖️</span>
+      <b class="big">101 : 100</b>
+      <span class="lab">Men per 100 women</span>
+      <div class="bar"><i style="--w:101%; --c:#ffc247"></i></div>
+    </article>
+    <article class="stat reveal">
+      <span class="emoji">➕</span>
+      <b class="big">~42M</b>
+      <span class="lab">Extra men worldwide</span>
+      <div class="bar"><i style="--w:70%; --c:#5be5a3"></i></div>
+    </article>
+  </div>
+
+  <figure class="shot chart reveal">
+    <img src="images/owid-sex-ratio-birth-2023.png" alt="World map showing the sex ratio at birth in 2023, with China, India and parts of the Caucasus and Southeast Asia most male-skewed" loading="lazy">
+    <figcaption><b>Sex ratio at birth, 2023</b> — boys born per 100 girls. Nature's baseline is about 105; the dark areas run well above it.
+    <span class="credit">Chart: <a href="https://ourworldindata.org/gender-ratio" target="_blank" rel="noopener">Our World in Data</a> (CC BY) · via <a href="https://en.wikipedia.org/wiki/Human_sex_ratio" target="_blank" rel="noopener">Wikipedia</a></span></figcaption>
+  </figure>
+
+  <figure class="shot chart reveal">
+    <img src="images/pew-sex-ratio-birth.png" alt="Pew Research Center map of the world's most male-biased sex ratios at birth from 2000 to 2020" loading="lazy">
+    <figcaption>Where the skew is sharpest: <b>Azerbaijan 115, China 115, Armenia 114, Vietnam 111, Albania 111, India 110</b> male births per 100 female births, averaged 2000–2020.
+    <span class="credit">Chart: <a href="https://www.pewresearch.org/religion/2022/08/23/sidebar-sex-ratios-around-the-world/" target="_blank" rel="noopener">Pew Research Center</a>, from UN World Population Division data</span></figcaption>
+  </figure>
+
+  <div class="dotbox reveal">
+    <h3>What 100 people on Earth look like 🧍</h3>
+    <div class="dots" id="dots" aria-label="50 blue figures and 50 pink figures"></div>
+    <p class="note">Roughly 50 men / 50 women — but the balance flips hard by age group. 👇</p>
+  </div>
+
+  <div class="agebox reveal">
+    <h3>The age flip 🔄</h3>
+    <div class="agerow"><span>At birth 👶</span><div class="split"><i class="m" style="width:51.3%">51% boys</i><i class="f">49% girls</i></div></div>
+    <div class="agerow"><span>Working age 💼</span><div class="split"><i class="m" style="width:51%">51% men</i><i class="f">49% women</i></div></div>
+    <div class="agerow"><span>Age 65+ 🧓</span><div class="split"><i class="m" style="width:44%">44% men</i><i class="f">56% women</i></div></div>
+    <p class="note">Men start ahead and die earlier. Women win the long game — but the surplus of
+      <em>young</em> men is exactly the group that conflict researchers worry about.</p>
+  </div>
+</section>
+
+<!-- ============ VISUAL SLIDES ============ -->
+<section class="wrap" id="slides">
+  <h2 class="sec-title">🖼️ Visual slides — swipe through the argument</h2>
+  <p class="sec-sub">Five slides. Thirty seconds. Use the arrows, swipe, or arrow keys.</p>
+
+  <div class="slider">
+    <div class="slides" id="slideTrack">
+      <article class="slide s1">
+        <span class="num">01</span>
+        <h3>Testosterone isn't an "anger switch" 🔬</h3>
+        <p>Harvard researchers put it plainly: testosterone drives a hunger for <b>status and dominance</b>,
+        not rage by itself. The danger shows up when a society has millions of men chasing status
+        and nothing to offer them.</p>
+      </article>
+      <article class="slide s2">
+        <span class="num">02</span>
+        <h3>Threatened men vote for war 🪖</h3>
+        <p>Sociological work on "masculine overcompensation" found that when men with higher
+        testosterone feel their status is challenged, their <b>support for military action can roughly
+        double</b>. Diplomacy gets harder exactly when it's needed most.</p>
+      </article>
+      <article class="slide s3">
+        <span class="num">03</span>
+        <h3>Risk goes blind 🎲</h3>
+        <p>High testosterone lowers sensitivity to punishment and fear. Add the <b>"winner effect"</b> —
+        past victories making leaders underestimate cost — and you get reckless escalation
+        instead of an off-ramp.</p>
+      </article>
+      <article class="slide s4">
+        <span class="num">04</span>
+        <h3>The youth bulge 💣</h3>
+        <p>A large share of young, single men with no job, no property and no marriage prospects is
+        a known instability pattern. Their status drive gets redirected: <b>unrest, radicalisation,
+        recruitment by armed groups.</b></p>
+      </article>
+      <article class="slide s5">
+        <span class="num">05</span>
+        <h3>Then women pay the bill 💔</h3>
+        <p>Hudson &amp; den Boer called these men <b>"bare branches."</b> Groups like ISIS and Boko Haram
+        recruited them with an explicit offer: a wife, taken by force. UN reporting treats
+        conflict-related sexual violence as a <b>deliberate tactic</b>, not random chaos.</p>
+      </article>
+    </div>
+    <button class="arrow left" id="prev" aria-label="Previous slide">‹</button>
+    <button class="arrow right" id="next" aria-label="Next slide">›</button>
+    <div class="dotsnav" id="dotsNav"></div>
+  </div>
+</section>
+
+<!-- ============ RISK CARDS ============ -->
+<section class="wrap" id="risk">
+  <h2 class="sec-title">⚠️ Five dangers, spelled out</h2>
+  <p class="sec-sub">Tap a card to open it.</p>
+
+  <div class="cards">
+    <details class="card reveal"><summary>1. More appetite for military action 🪖</summary>
+      <p>When status feels threatened, support for war-first solutions jumps. Research on political
+      psychology links higher testosterone to stronger "overcompensation" after a perceived challenge —
+      meaning compromise reads as weakness during a standoff.</p></details>
+
+    <details class="card reveal"><summary>2. Broken risk assessment 🎲</summary>
+      <p>Lower fear response + lower punishment sensitivity = dangerously high risk tolerance.
+      Leaders riding a streak of wins stop pricing the real cost of escalation.</p></details>
+
+    <details class="card reveal"><summary>3. Empathy drains out of the room 🧊</summary>
+      <p>Biomedical studies report reduced empathic mimicry and weaker reading of emotional cues.
+      Diplomacy runs on nuance; without it, a neighbour's defensive move gets misread as an attack.</p></details>
+
+    <details class="card reveal"><summary>4. The youth bulge 👥</summary>
+      <p>Single young men carry the highest baseline testosterone — mating and status competition.
+      Deny a whole generation of them work, housing and marriage, and that drive gets redirected
+      into militias, gangs and civil unrest.</p></details>
+
+    <details class="card reveal"><summary>5. Status-loss panic 📉</summary>
+      <p>The dual-hormone hypothesis: high testosterone plus high stress flips behaviour from
+      <em>seeking</em> status to <em>defending</em> it, viciously. A declining power can start a
+      defensive war purely to avoid looking weak.</p></details>
+
+    <details class="card reveal hot"><summary>6. What that means for women in wartime 💔</summary>
+      <p>Put it together: frustrated low-status men + collapse of law and order + armed groups that
+      openly offer "a wife" as a recruitment bonus. Abductions, forced marriage and trafficking
+      spike. UN agencies document sexual violence as a deliberate tool of control and terror, and
+      conflict zones see a sharp rise in trafficking because war turns people into commodities.
+      <br><br><b>Plainly: the men's status crisis gets paid for by women's bodies.</b></p></details>
+  </div>
+
+  <blockquote class="pull reveal">
+    "The biological drive for status plus a domestic lack of opportunity creates a reservoir of
+    frustrated men. Armed groups exploit exactly that frustration — promising status, money and women."
+  </blockquote>
+</section>
+
+<!-- ============ 3. JS ANIMATION SECTION ============ -->
+<section class="anim-sec" id="anim">
+  <div class="wrap">
+    <h2 class="sec-title light">🎛️ Play with it: the "bare branches" simulator</h2>
+    <p class="sec-sub light">Move the sliders. Blue dots are young men, pink are young women.
+      Red dots are men with no status path — the pool armed groups recruit from.</p>
+    <div class="simbox">
+      <canvas id="sim"></canvas>
+      <div class="controls">
+        <label>Sex ratio at birth <output id="oRatio">106</output> boys / 100 girls
+          <input type="range" id="rRatio" min="100" max="120" value="106">
+        </label>
+        <label>Jobs &amp; opportunity for young men <output id="oJobs">60</output>%
+          <input type="range" id="rJobs" min="0" max="100" value="60">
+        </label>
+        <div class="readout">
+          <div><b id="mSurplus">0</b><span>surplus men</span></div>
+          <div><b id="mBare" class="red">0</b><span>no status path</span></div>
+          <div><b id="mRisk">Low</b><span>instability signal</span></div>
+        </div>
+        <p class="tiny">Illustrative model, not a forecast. It just shows how two dials — birth ratio and
+          opportunity — stack up into a very large, very angry number.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POST + JOIN ============ -->
+<section class="wrap" id="join">
+  <h2 class="sec-title">🤝 Join in — two quick things</h2>
+
+  <div class="two">
+    <!-- POST VALUABLE INFO -->
+    <form class="panel" id="postForm" action="https://formspree.io/f/REPLACE_POST_FORM_ID" method="POST">
+      <h3>📌 Post something valuable</h3>
+      <p class="pnote">Keep it <b>very brief</b>. A fact, a link, a study, a correction. Images/videos: paste the link. 🔗</p>
+      <input name="name" placeholder="Your name 🙂" required>
+      <input name="link" type="url" placeholder="Link to source (optional) 🔗">
+      <textarea name="info" rows="3" maxlength="280" placeholder="Your brief info… (280 characters)" required></textarea>
+      <div class="rowb"><span class="tiny" id="countChars">0 / 280</span>
+      <button class="btn primary" type="submit">Post it ✍️</button></div>
+      <p class="status" id="postStatus"></p>
+    </form>
+
+    <!-- CONTACT -->
+    <form class="panel accent" id="contactForm" action="https://formspree.io/f/REPLACE_CONTACT_FORM_ID" method="POST">
+      <h3>💬 Get the WhatsApp group link</h3>
+      <p class="pnote">Drop your details and the public group link appears right here, instantly.</p>
+      <input name="name" placeholder="Full name" required>
+      <input name="email" type="email" placeholder="Email address" required>
+      <input name="whatsapp" type="tel" placeholder="WhatsApp number (+country code)" required>
+      <button class="btn primary wide" type="submit">Submit &amp; reveal link 🚀</button>
+      <div class="reveal-box" id="waBox" hidden>
+        <p>✅ You're in. Here's the public group:</p>
+        <a class="btn wa" id="waLink" href="#" target="_blank" rel="noopener">Open WhatsApp Group 💚</a>
+        <button type="button" class="btn ghost sm" id="copyWa">Copy link 📋</button>
+      </div>
+      <p class="status" id="contactStatus"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ 2. COMMENT SECTION + LIKES ============ -->
+<section class="wrap" id="wall">
+  <h2 class="sec-title">🗣️ Community wall</h2>
+  <p class="sec-sub">Real talk only. Disagree with the page — that's allowed and encouraged.</p>
+
+  <div class="likebar">
+    <button class="likebtn" id="likePage">👍 <span>Useful</span> <b id="likeCount">0</b></button>
+    <button class="likebtn" id="heartPage">❤️ <span>Important</span> <b id="heartCount">0</b></button>
+    <button class="likebtn" id="sharePage">🔗 <span>Copy page link</span></button>
+  </div>
+
+  <form class="panel" id="commentForm" action="https://formspree.io/f/REPLACE_COMMENT_FORM_ID" method="POST">
+    <div class="rowi">
+      <input name="name" id="cName" placeholder="Name" required>
+      <select name="mood" id="cMood">
+        <option>💭 Thought</option><option>❓ Question</option>
+        <option>📚 Source</option><option>🔥 Disagree</option>
+      </select>
+    </div>
+    <textarea name="comment" id="cText" rows="3" placeholder="Write a comment… emojis welcome 😄" required></textarea>
+    <div class="rowb"><span class="tiny">Posted publicly on this page + emailed to the moderators.</span>
+    <button class="btn primary" type="submit">Comment 💬</button></div>
+  </form>
+
+  <div id="commentList" class="comments"></div>
+</section>
+
+<!-- ============ 4. FOOTER / CONCLUSION ============ -->
+<section class="wrap">
+  <a class="libcard reveal c-just solo" href="christa-pike.html">
+    <span class="cat">⚖️ Also on this site · 🆕 New</span>
+    <h3>Christa Pike survived her execution</h3>
+    <p>Another story about what states do to bodies when the rules run out. Two "lethal" doses,
+      seven needles, and a protocol that simply stops at the point it failed.</p>
+    <span class="go">Read the page →</span>
+  </a>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <h2>🧭 So what do we do with this?</h2>
+    <p class="concl">
+      None of this says men are the problem. It says <b>men without a future are a predictable risk</b> —
+      and the people who pay first are women in conflict zones. The fix isn't mysterious either:
+      jobs, education, housing, and marriage/family prospects for young men; hard prosecution of
+      wartime sexual violence; and honest conversations like this one instead of pretending the
+      numbers aren't there. 🙏
+    </p>
+
+    <details class="srcs">
+      <summary>📚 Sources &amp; further reading</summary>
+      <ul>
+        <li><a href="https://statisticstimes.com" target="_blank" rel="noopener">Statistics Times</a> — global male/female population counts</li>
+        <li><a href="https://www.pewresearch.org" target="_blank" rel="noopener">Pew Research Center</a> — sex ratios by age group</li>
+        <li><a href="https://www.un.org" target="_blank" rel="noopener">United Nations</a> — population projections toward 2050</li>
+        <li><a href="https://www.scienceabc.com" target="_blank" rel="noopener">ScienceABC</a> — overview of the global sex ratio</li>
+        <li><a href="https://news.harvard.edu/gazette/story/2021/09/harvard-biologist-discusses-testosterones-role-in-society/" target="_blank" rel="noopener">Harvard Gazette</a> — testosterone, status and society</li>
+        <li><a href="https://phys.org" target="_blank" rel="noopener">Phys.org</a> — masculine overcompensation &amp; support for war</li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5068300/" target="_blank" rel="noopener">PNAS / PMC</a> — dual-hormone hypothesis</li>
+        <li><a href="https://www.unwomen.org" target="_blank" rel="noopener">UN Women</a> — conflict-related sexual violence</li>
+        <li><a href="https://www.unodc.org" target="_blank" rel="noopener">UNODC</a> — trafficking in conflict zones</li>
+        <li><a href="https://www.icmc.net" target="_blank" rel="noopener">ICMC</a> · <a href="https://odihr.osce.org" target="_blank" rel="noopener">OSCE/ODIHR</a> — displacement &amp; exploitation</li>
+        <li><strong>Images on this page:</strong> Our World in Data (CC BY) · Pew Research Center / UN World Population Division. Credited to their original sources.</li>
+        <li><a href="https://journals.sagepub.com" target="_blank" rel="noopener">SAGE Journals</a> — youth bulge &amp; instability</li>
+      </ul>
+    </details>
+
+    <p class="fine"><a href="index.html">← Back to the library</a> · Community page · built for phones and laptops 📱💻 · forms by Formspree ·
+      no tracking tags, no UTM, no ad pixels.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Hard Numbers — a community page about power, violence and the people it lands on</title>
+<meta name="description" content="A small community library. Honest, plain-language breakdowns of stories and statistics about violence, the state, and who pays the price." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Sora:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html">🧭 <span>The Hard Numbers</span></a>
+  <nav>
+    <a href="index.html" class="here">Home</a>
+    <a href="gender-gap.html">The 42 Million Gap</a>
+    <a href="christa-pike.html">Christa Pike</a>
+    <a class="cta" href="gender-gap.html#join">Join 🤝</a>
+  </nav>
+</header>
+
+<!-- HUB BANNER -->
+<section class="banner">
+  <canvas id="fx"></canvas>
+  <div class="banner-inner">
+    <p class="kicker">🧭 A small community library · updated as stories break</p>
+    <h1>Hard numbers, <span class="hl">plain words</span>, no spin.</h1>
+    <p class="lede">
+      Every page here takes one story or one statistic — the kind that usually gets buried in a
+      PDF or screamed about on social media — and lays it out simply and honestly. 📚
+      <br><br>
+      Then it hands the mic over. Post what you know, disagree in the comments, bring a source. 🎙️
+    </p>
+    <div class="banner-btns">
+      <a class="btn primary" href="#library">Browse the library ↓</a>
+      <a class="btn ghost" href="gender-gap.html#join">Join the WhatsApp group 💬</a>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE-BY-PAGE CATEGORIES -->
+<section class="wrap" id="library">
+  <h2 class="sec-title">🗂️ The library — page by page</h2>
+  <p class="sec-sub">Each card is its own full page. Pick a category.</p>
+
+  <div class="libgrid">
+
+    <a class="libcard reveal c-demo" href="gender-gap.html">
+      <span class="cat">📊 Demographics &amp; Conflict</span>
+      <h3>The 42 Million Gap</h3>
+      <p>There are about 42 million more men than women alive today. That small statistic,
+        plus millions of young men with no status at home, is one of the quietest predictors of
+        unrest — and of what happens to women when wars start.</p>
+      <img class="thumb" src="images/owid-sex-ratio-birth-2023.png" alt="World map of sex ratio at birth" loading="lazy">
+      <ul class="chips">
+        <li>4.17B vs 4.13B</li><li>Youth bulge</li><li>"Bare branches"</li><li>Interactive sim</li>
+      </ul>
+      <span class="go">Read the page →</span>
+    </a>
+
+    <a class="libcard reveal c-just" href="christa-pike.html">
+      <span class="cat">⚖️ Crime &amp; Justice · 🆕 New</span>
+      <h3>Christa Pike survived her execution</h3>
+      <p>Tennessee strapped her to a gurney, pushed two supposedly lethal doses of pentobarbital,
+        and she was still alive — snoring. An hour of needles. Blinds up, blinds down.
+        What actually happened, minute by minute.</p>
+      <img class="thumb" src="images/witnesses-presser-ap.jpg" alt="Media witnesses at a night press conference after the halted execution" loading="lazy">
+      <ul class="chips">
+        <li>Oct 1, 2026</li><li>7+ needles</li><li>Executions paused</li><li>Timeline</li>
+      </ul>
+      <span class="go">Read the page →</span>
+    </a>
+
+    <div class="libcard soon">
+      <span class="cat">🧪 Coming next</span>
+      <h3>Got a story worth a page?</h3>
+      <p>Send it in. If it's a real story with real sources, it gets its own page here —
+        same format, same honesty, same comment section.</p>
+      <span class="go"><a href="gender-gap.html#join">Suggest a topic →</a></span>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <h2>🧭 Why this exists</h2>
+    <p class="concl">
+      Most of these stories get told either as cold statistics nobody feels, or as outrage nobody
+      can check. We try the middle: the actual numbers, the actual sources, in words you'd use
+      talking to a friend. Then an open comment box, because we're not always right. 🙏
+    </p>
+    <p class="fine">Community pages · built for phones and laptops 📱💻 · forms by Formspree ·
+      no tracking tags, no UTM, no ad pixels.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
